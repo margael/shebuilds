@@ -1,0 +1,141 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+/**
+ * Links
+ */
+ a {
+    columns: #000000;;
+    text-decoration: none; }
+    a:visited {
+      color: #3104fd }
+    a:hover {
+      color: rgb(5, 255, 130);
+      text-decoration: underline; }
+    .social-media-list a:hover {
+      text-decoration: none; }
+      .social-media-list a:hover .username {
+        text-decoration: underline; }
+
+/**
+ * Site header
+ */
+ .site-title {
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    line-height: 54px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    float: left; }
+    .site-title, .site-title:visited {
+      color: #424242; }
+
+ .site-header {
+    border-top: 5px solid #ffffff;
+    border-bottom: 1px solid #f8f3f3;
+    min-height: 55.95px;
+    background-color: rgb(201, 236, 224);
+    position: relative; }
+
+/**
+ * Page content
+ */
+ .page-content {
+    padding: 30px 0;
+    flex: 1; }
+  
+  .page-heading {
+    font-size: 32px;
+    font-style: oblique;
+    letter-spacing: 2px;}
+  
+  .post-list-heading {
+    font-size: 28px;
+    font-style: oblique;
+    font-weight: bolder;
+    letter-spacing: 2px; }
+  
+  .post-list {
+    margin-left: 0;
+    list-style: none; }
+    .post-list > li {
+        background-color: rgb(230, 210, 202);
+      margin-bottom: 30px; }
+
+/**
+ *twitter feed location 
+ */
+articleside{ 
+    float: right;
+    display: inline;
+    padding: 15px 0px 0px 0px;
+    width: 20%;
+    text-align: center;
+    margin-right:1%;
+}
+
+/**
+ * body text stacking function 
+ */
+@media (max-width: 50px) {
+    articlemain {
+    width: 100%;
+    height: auto;
+    }
+}
+
+/**
+ *twitter stacking function 
+ */
+@media (max-width: 650px) {
+    articleside {
+    float: center;
+    width: 100%;
+    height: auto;
+  }
+}
+/**
+ * Page content
+ */
+ .page-content {
+  padding: 30px 0;
+  text-align: justify;
+  flex: 1; }
+
+/** 
+ *Post content
+ */
+.post-content {
+  text-align: justify;
+  margin-bottom: 30px; }
+  .post-content h2 {
+    font-size: 32px; }
+    @media screen and (max-width: 800px) {
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content h3 {
+    font-size: 26px; }
+    @media screen and (max-width: 800px) {
+      .post-content h3 {
+        font-size: 22px; } }
+  .post-content h4 {
+    font-size: 20px; }
+    @media screen and (max-width: 800px) {
+      .post-content h4 {
+        font-size: 18px; } }
+/** 
+ *Button class
+ */
+.footerbutton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;}
